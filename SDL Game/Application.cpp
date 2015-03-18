@@ -1,13 +1,16 @@
 #pragma once
 #include "Application.h"
 
+
 Application::Application()
 {
 	ModuleDummy* pDummy = new ModuleDummy();
 	ModuleWindow* pWindow = new ModuleWindow();
+	ModuleRender* pRender = new ModuleRender();
 
 	AddModule(pDummy);
 	AddModule(pWindow);
+	AddModule(pRender);
 }
 
 bool Application::Init()
